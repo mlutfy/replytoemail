@@ -254,6 +254,17 @@ function replytoemail_civicrm_buildForm($formName, &$form) {
       CRM_Core_Region::instance('page-body')->add(array(
         'template' => 'CRM/Replytoemail/Reply.tpl',
       ));
+      //CRM-1648 Merge Field doesn't get added to the Subject while replying an inbound email from dashboard
+      $elementName = 'subject';
+      if(array_key_exists($elementName, $form->_elementIndex)) {
+        CRM_Core_Resources::singleton()->addScript(
+          "CRM.$(function($) {
+            if ($('.crm-activity-form-block-subject input:hidden[name=subject]').length > 0) {
+              $('.crm-activity-form-block-subject input:hidden[name=subject]').attr('id','subject_view');
+            }
+          });"
+        );
+      }
     }
   }
   if ($formName == 'CRM_Contact_Form_Task_Email' && $form->_context == 'sendReply') {
