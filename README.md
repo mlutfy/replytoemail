@@ -1,39 +1,22 @@
-# biz.jmaconsulting.replytoemail
+# Reply to Email
 
 ![Screenshot](/images/screenshot.png)
 
-(*FIXME: In one or two paragraphs, describe what the extension does and why one would download it. *)
+Makes it easier to reply to inbound email or activities created using a contact form.
+
+* Adds an Archive and Reply button to Activities
+* Creates a report of new inbound messages.
 
 The extension is licensed under [AGPL-3.0](LICENSE.txt).
 
 ## Requirements
 
 * PHP v7.0+
-* CiviCRM (*FIXME: Version number*)
+* CiviCRM 5.78 or later
 
-## Installation (Web UI)
+## Installation
 
-This extension has not yet been published for installation via the web UI.
-
-## Installation (CLI, Zip)
-
-Sysadmins and developers may download the `.zip` file for this extension and
-install it with the command-line tool [cv](https://github.com/civicrm/cv).
-
-```bash
-cd <extension-dir>
-cv dl biz.jmaconsulting.replytoemail@https://github.com/FIXME/biz.jmaconsulting.replytoemail/archive/master.zip
-```
-
-## Installation (CLI, Git)
-
-Sysadmins and developers may clone the [Git](https://en.wikipedia.org/wiki/Git) repo for this extension and
-install it with the command-line tool [cv](https://github.com/civicrm/cv).
-
-```bash
-git clone https://github.com/FIXME/biz.jmaconsulting.replytoemail.git
-cv en replytoemail
-```
+Install as a regular CiviCRM extension.
 
 ## Usage
 
